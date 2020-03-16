@@ -135,6 +135,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),                   # a path to show that any directory called static can contain static files
+)
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')            # this specifies where all our base media will
 MEDIA_URL = '/media/'
 
